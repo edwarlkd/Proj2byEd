@@ -1,0 +1,38 @@
+﻿Build started 12/17/2015 2:59:35 PM.
+     1>Project "C:\Users\Edward\Desktop\잡초\Merced\CSE170\Proj2\Proj2glutapp3dSuperquadric\visualc14\glutapp3d.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I../ /I../freeglut /I../glew /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"obj\glutapp3d_Debug\\" /Fd"obj\glutapp3d_Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt ..\racingtrack.cpp
+         racingtrack.cpp
+     1>c:\users\edward\desktop\잡초\merced\cse170\proj2\proj2glutapp3dsuperquadric\racingtrack.h(18): warning C4305: 'initializing': truncation from 'double' to 'const float'
+     1>c:\users\edward\desktop\잡초\merced\cse170\proj2\proj2glutapp3dsuperquadric\racingtrack.cpp(75): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+     1>c:\users\edward\desktop\잡초\merced\cse170\proj2\proj2glutapp3dsuperquadric\racingtrack.cpp(132): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"obj\glutapp3d_Debug\glutapp3d.exe" /NOLOGO ../freeglut/freeglut.lib ../glew/glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"obj\glutapp3d_Debug\glutapp3d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"obj\glutapp3d_Debug\glutapp3d.lib" /MACHINE:X86 /SAFESEH obj\glutapp3d_Debug\app_main.obj
+         obj\glutapp3d_Debug\groundwork.obj
+         obj\glutapp3d_Debug\groundworkoutside.obj
+         obj\glutapp3d_Debug\gs_image.obj
+         obj\glutapp3d_Debug\gs_input.obj
+         obj\glutapp3d_Debug\gs_material.obj
+         obj\glutapp3d_Debug\gs_string.obj
+         obj\glutapp3d_Debug\gs_strings.obj
+         obj\glutapp3d_Debug\racingtrack.obj
+         obj\glutapp3d_Debug\so_axis.obj
+         obj\glutapp3d_Debug\app_window.obj
+         obj\glutapp3d_Debug\glut_window.obj
+         obj\glutapp3d_Debug\gs.obj
+         obj\glutapp3d_Debug\gs_array.obj
+         obj\glutapp3d_Debug\gs_color.obj
+         obj\glutapp3d_Debug\gs_mat.obj
+         obj\glutapp3d_Debug\gs_quat.obj
+         obj\glutapp3d_Debug\gs_vec.obj
+         obj\glutapp3d_Debug\gs_vec2.obj
+         obj\glutapp3d_Debug\ogl_tools.obj
+         obj\glutapp3d_Debug\so_lines.obj
+         obj\glutapp3d_Debug\so_superquadric.obj
+         obj\glutapp3d_Debug\so_myobject.obj
+         glutapp3d.vcxproj -> C:\Users\Edward\Desktop\잡초\Merced\CSE170\Proj2\Proj2glutapp3dSuperquadric\visualc14\obj\glutapp3d_Debug\glutapp3d.exe
+     1>Done Building Project "C:\Users\Edward\Desktop\잡초\Merced\CSE170\Proj2\Proj2glutapp3dSuperquadric\visualc14\glutapp3d.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.67
