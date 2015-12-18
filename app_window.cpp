@@ -58,7 +58,7 @@ void AppWindow::initPrograms ()
    _racingtrack.init();
    _groundworkoutside.init();
    _groundwork.init();
-
+   _startingline.init();
 
    // set light:
    _light.set ( GsVec(0,0,10), GsColor(90,90,90,255), GsColor::white, GsColor::white );
@@ -168,7 +168,7 @@ void AppWindow::glutIdle ()
 
    double curtime = gs_time();
    if (curtime - _lasttime > 0.05f)
-   { _roty+=0.005f;
+   { _roty+=0.000f; //changed from 0.05
      if ( R<0.4 || R>8 ) _animateinc*=-1;
      R+=_animateinc;
      S+=_animateinc;
@@ -196,6 +196,7 @@ void AppWindow::glutDisplay ()
 	   _racingtrack.build();
 	   _groundworkoutside.build(_racingtrack.coordout);
 	   _groundwork.build();
+	   _startingline.build();
 	   buildonce = false;
    }
 
@@ -234,7 +235,7 @@ void AppWindow::glutDisplay ()
    _racingtrack.draw(stransf, sproj);
    _groundworkoutside.draw(stransf, sproj, _light);
    _groundwork.draw(stransf, sproj);
-
+   _startingline.draw(stransf, sproj, _light);
    // Swap buffers and draw:
    glFlush();         // flush the pipeline (usually not necessary)
    glutSwapBuffers(); // we were drawing to the back buffer, now bring it to the front
